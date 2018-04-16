@@ -1,5 +1,7 @@
 .mytitle {
   color: #ff8c00;
   border: #000;
-  font-size: myFont;
+}
+body {
+  background-color: #ff8c00;
 }

@@ -1,23 +1,109 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">Dashboard</div>
+    <section class="Home">
+        {{-- Banner --}}
+        <section class="Banner">
+            <section class="Banner-content">
+                <h1 class="Banner-title">Conectar en Larasongs</h1>
+                <p class="Banner-text">
+                    Descubre escucha y comparte un catalogo que no deja de crecer con artistas emergentes y consolidados de todo el mundo.
+                </p>
 
-                <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success">
-                            {{ session('status') }}
-                        </div>
-                    @endif
+                <a href="#" class="Banner-button btn btn-primary">
+                    Registrate gratis
+                </a>
+            </section>
 
-                    You are logged in!
-                </div>
+
+        </section>
+        {{-- /Banner --}}
+
+        {{-- Home-songs --}}
+        <section class="Home-songs">
+            <h2 class="subtitle">Escucha la musica del momento gratis en la comunidad de Larasongs</h2>
+
+            {{-- SongList --}}
+            <section class="SongList">
+                    <article class="Song">
+                        <figure class="Song">
+                            <img class="Song-photo" src="/default.png" alt="Song title" />
+
+                            <figcaption class="Song-description">
+                                <h3 class="Song-title">
+                                    <a href="/songs/1" class="Song-url">Song title</a>
+                                </h3>
+                                <a href="/artist/1" class="Song-artist">Artist name</a>
+                            </figcaption>
+                        </figure>
+                    </article>
+
+                    <article class="Song">
+                        <figure class="Song">
+                            <img class="Song-photo" src="/default.png" alt="Song title" />
+
+                            <figcaption class="Song-description">
+                                <h3 class="Song-title">
+                                    <a href="/songs/1" class="Song-url">Song title</a>
+                                </h3>
+                                <a href="/artist/1" class="Song-artist">Artist name</a>
+                            </figcaption>
+                        </figure>
+                    </article>
+
+                    <article class="Song">
+                        <figure class="Song">
+                            <img class="Song-photo" src="/default.png" alt="Song title" />
+
+                            <figcaption class="Song-description">
+                                <h3 class="Song-title">
+                                    <a href="/songs/1" class="Song-url">Song title</a>
+                                </h3>
+                                <a href="/artist/1" class="Song-artist">Artist name</a>
+                            </figcaption>
+                        </figure>
+                    </article>
+
+                    <article class="Song">
+                        <figure class="Song">
+                            <img class="Song-photo" src="/default.png" alt="Song title" />
+
+                            <figcaption class="Song-description">
+                                <h3 class="Song-title">
+                                    <a href="/songs/1" class="Song-url">Song title</a>
+                                </h3>
+                                <a href="/artist/1" class="Song-artist">Artist name</a>
+                            </figcaption>
+                        </figure>
+                    </article>
+                </section>
+            </section>
+            {{-- /SongList --}}
+
+            <div class="Home-songsFooter">
+                <a href="/search?resource=songs&top=50" class="Home-songsLink btn btn-primary">
+                    Escucha nuestro top 50
+                </a>
             </div>
-        </div>
-    </div>
-</div>
+        {{-- /Home-songs --}}
+
+        {{-- Home-join --}}
+        <section class="Home-join">
+            <h2 class="subtitle">Gracias por escuchar, ahora unete.</h2>
+
+            <p class="text">Guarda pistas, sigue a artistas y crea tust listas. Y todo, gratis.</p>
+
+            <footer class="Home-footer">
+                <a href="/register" class="Home-registerButton btn btn-primary">
+                    Crea tu cuenta
+                </a>
+
+                <div class="Home-login">
+                    <span class="text">Ya tienes una cuenta?</span>
+                    <a href="/login" class="Home-loginButton btn btn-flat">Inicia sesion</a>
+                </div>
+            </footer>
+        </section>
+        {{-- /Home-join --}}
+    </section>
 @endsection

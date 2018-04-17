@@ -22,8 +22,29 @@
 </head>
 <body>
     <div id="app">
-        <main class="">
+        <main class="App">
+            <header class="Header">
+                <div class="Logo">
+                    <a href="/" class="Logo-link">Soundcloud</a>
+                </div>
+
+                <nav class="Navigation">
+                    <ul class="Navigation-list">
+                        <li class="Navigation-listItem">
+                            <a href="/login" class="Navigation-listLink btn btn-flat">Inicia sesion</a>
+                        </li>
+                        <li class="Navigation-listItem">
+                            <a href="/register" class="Navigation-listLink btn btn-primary">Crea tu cuenta</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+
             @yield('content')
+
+            <footer class="Footer">
+                <span class="text">Idioma: Espańol</span>
+            </footer>
         </main>
     </div>
 </body>

@@ -1,3 +1,4 @@
+// Header
 .Header
     border-bottom 4px solid black
     height 4em
@@ -5,12 +6,38 @@
     display flex
     justify-content space-between
     align-items center
+// Header
 
+// Navigation
 .Navigation-list
     display flex
 
-.Navigation-listItem:not(:last-child)
-    margin-right .5em
+    &Item:not(:last-child)
+        margin-right .5em
 
-.Navigation-listLink
-    padding .5em
+    &Link
+        padding .5em
+// Navigation
+
+// SongList
+.SongList
+    display grid
+    grid-template-columns repeat(auto-fill, minmax(200px, 1fr))
+    grid-gap 1em
+    padding 1em
+
+.Song
+    border 4px solid blue
+
+    &-description
+        padding .5em
+        text-align center
+
+    &-title
+        margin-bottom .5em
+// SongList
+
+// Footer
+.Footer
+    padding 2em
+// Footer

@@ -2,7 +2,6 @@
 
 @section('content')
     <section class="Home">
-        {{-- Banner --}}
         <section class="Banner">
             <section class="Banner-content">
                 <h1 class="Banner-title">Conectar en Larasongs</h1>
@@ -10,84 +9,130 @@
                     Descubre escucha y comparte un catalogo que no deja de crecer con artistas emergentes y consolidados de todo el mundo.
                 </p>
 
-                <a href="#" class="Banner-button btn btn-primary">
+                <a href="{{ route('register') }}" class="Banner-button btn btn-primary">
                     Registrate gratis
                 </a>
             </section>
 
 
         </section>
-        {{-- /Banner --}}
 
-        {{-- Home-songs --}}
         <section class="Home-songs">
             <h2 class="subtitle">Escucha la musica del momento gratis en la comunidad de Larasongs</h2>
 
-            {{-- SongList --}}
             <section class="SongList">
-                    <article class="Song">
-                        <figure class="Song">
-                            <img class="Song-photo" src="/default.png" alt="Song title" />
+                <article class="Song">
+                    <figure class="Song">
+                        <img class="Song-photo" src="/default.png" alt="Song title" />
 
-                            <figcaption class="Song-description">
-                                <h3 class="Song-title">
-                                    <a href="/songs/1" class="Song-url">Song title</a>
-                                </h3>
-                                <a href="/artist/1" class="Song-artist">Artist name</a>
-                            </figcaption>
-                        </figure>
-                    </article>
+                        <figcaption class="Song-description">
+                            <h3 class="Song-title">
+                                <a href="/songs/1" class="Song-url">Song title</a>
+                            </h3>
+                            <a href="/artist/1" class="Song-artist">Artist name</a>
+                        </figcaption>
+                    </figure>
+                </article>
 
-                    <article class="Song">
-                        <figure class="Song">
-                            <img class="Song-photo" src="/default.png" alt="Song title" />
+                <article class="Song">
+                    <figure class="Song">
+                        <img class="Song-photo" src="/default.png" alt="Song title" />
 
-                            <figcaption class="Song-description">
-                                <h3 class="Song-title">
-                                    <a href="/songs/1" class="Song-url">Song title</a>
-                                </h3>
-                                <a href="/artist/1" class="Song-artist">Artist name</a>
-                            </figcaption>
-                        </figure>
-                    </article>
+                        <figcaption class="Song-description">
+                            <h3 class="Song-title">
+                                <a href="/songs/1" class="Song-url">Song title</a>
+                            </h3>
+                            <a href="/artist/1" class="Song-artist">Artist name</a>
+                        </figcaption>
+                    </figure>
+                </article>
 
-                    <article class="Song">
-                        <figure class="Song">
-                            <img class="Song-photo" src="/default.png" alt="Song title" />
+                <article class="Song">
+                    <figure class="Song">
+                        <img class="Song-photo" src="/default.png" alt="Song title" />
 
-                            <figcaption class="Song-description">
-                                <h3 class="Song-title">
-                                    <a href="/songs/1" class="Song-url">Song title</a>
-                                </h3>
-                                <a href="/artist/1" class="Song-artist">Artist name</a>
-                            </figcaption>
-                        </figure>
-                    </article>
+                        <figcaption class="Song-description">
+                            <h3 class="Song-title">
+                                <a href="/songs/1" class="Song-url">Song title</a>
+                            </h3>
+                            <a href="/artist/1" class="Song-artist">Artist name</a>
+                        </figcaption>
+                    </figure>
+                </article>
 
-                    <article class="Song">
-                        <figure class="Song">
-                            <img class="Song-photo" src="/default.png" alt="Song title" />
+                <article class="Song">
+                    <figure class="Song">
+                        <img class="Song-photo" src="/default.png" alt="Song title" />
 
-                            <figcaption class="Song-description">
-                                <h3 class="Song-title">
-                                    <a href="/songs/1" class="Song-url">Song title</a>
-                                </h3>
-                                <a href="/artist/1" class="Song-artist">Artist name</a>
-                            </figcaption>
-                        </figure>
-                    </article>
-                </section>
+                        <figcaption class="Song-description">
+                            <h3 class="Song-title">
+                                <a href="/songs/1" class="Song-url">Song title</a>
+                            </h3>
+                            <a href="/artist/1" class="Song-artist">Artist name</a>
+                        </figcaption>
+                    </figure>
+                </article>
+
+                <article class="Song">
+                    <figure class="Song">
+                        <img class="Song-photo" src="/default.png" alt="Song title" />
+
+                        <figcaption class="Song-description">
+                            <h3 class="Song-title">
+                                <a href="/songs/1" class="Song-url">Song title</a>
+                            </h3>
+                            <a href="/artist/1" class="Song-artist">Artist name</a>
+                        </figcaption>
+                    </figure>
+                </article>
+
+                <article class="Song">
+                    <figure class="Song">
+                        <img class="Song-photo" src="/default.png" alt="Song title" />
+
+                        <figcaption class="Song-description">
+                            <h3 class="Song-title">
+                                <a href="/songs/1" class="Song-url">Song title</a>
+                            </h3>
+                            <a href="/artist/1" class="Song-artist">Artist name</a>
+                        </figcaption>
+                    </figure>
+                </article>
+
+                <article class="Song">
+                    <figure class="Song">
+                        <img class="Song-photo" src="/default.png" alt="Song title" />
+
+                        <figcaption class="Song-description">
+                            <h3 class="Song-title">
+                                <a href="/songs/1" class="Song-url">Song title</a>
+                            </h3>
+                            <a href="/artist/1" class="Song-artist">Artist name</a>
+                        </figcaption>
+                    </figure>
+                </article>
+
+                <article class="Song">
+                    <figure class="Song">
+                        <img class="Song-photo" src="/default.png" alt="Song title" />
+
+                        <figcaption class="Song-description">
+                            <h3 class="Song-title">
+                                <a href="/songs/1" class="Song-url">Song title</a>
+                            </h3>
+                            <a href="/artist/1" class="Song-artist">Artist name</a>
+                        </figcaption>
+                    </figure>
+                </article>
             </section>
-            {{-- /SongList --}}
 
             <div class="Home-songsFooter">
                 <a href="/search?resource=songs&top=50" class="Home-songsLink btn btn-primary">
                     Escucha nuestro top 50
                 </a>
             </div>
-        {{-- /Home-songs --}}
+        </section>
 
-        {{-- Home-join --}}
         <section class="Home-join">
             <h2 class="subtitle">Gracias por escuchar, ahora unete.</h2>
 
@@ -104,6 +149,5 @@
                 </div>
             </footer>
         </section>
-        {{-- /Home-join --}}
     </section>
 @endsection

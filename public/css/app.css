@@ -1,3 +1,7 @@
+.subtitle {
+  text-align: center;
+  padding: 1em 0;
+}
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -44,4 +48,55 @@ li {
 }
 .Navigation-listLink {
   padding: 0.5em;
+}
+.SongList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 1em;
+  padding: 1em;
+}
+.Song {
+  border: 4px solid #00f;
+}
+.Song-description {
+  padding: 0.5em;
+  text-align: center;
+}
+.Song-title {
+  margin-bottom: 0.5em;
+}
+.Home {
+  display: grid;
+  grid-template-areas: "banner" "songs" "join";
+  grid-gap: 1em;
+}
+.Home-songs {
+  grid-area: songs;
+}
+.Home-songsFooter {
+  text-align: center;
+}
+.Home-join {
+  grid-area: join;
+  text-align: center;
+}
+.Banner {
+  height: 40vh;
+  min-height: 20em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.Banner-content {
+  width: 60%;
+  text-align: center;
+}
+.Banner-text {
+  padding: 1em;
 }

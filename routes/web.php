@@ -16,3 +16,7 @@ Auth::routes();
 Route::get('/', function () {
   return view('home');
 })->name('home');
+
+Route::get('/songs/1', function () {
+  return view('songs.detail');
+})->name('songs.detail');

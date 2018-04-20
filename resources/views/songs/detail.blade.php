@@ -23,7 +23,7 @@
       </section>
 
       <figure class="Song-photo">
-        <img class="Song-photoImage" src="photo.png" alt="Song name" />
+        <img class="Song-photoImage" src="http://lorempixel.com/400/400/cats" alt="Song name" />
       </figure>
     </section>
 

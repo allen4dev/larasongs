@@ -71,6 +71,58 @@ img {
 .Footer {
   padding: 2em;
 }
+.CommentBar-input {
+  width: 100%;
+  padding: 0.5em;
+}
+.Actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.Actions-button {
+  padding: 0.5em;
+  display: inline-block;
+}
+.Actions-infoItem {
+  padding: 0.5em;
+}
+.UserCard {
+  padding: 0.5em;
+}
+.UserCard-avatar {
+  max-width: 150px;
+  max-height: 150px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.UserCard-detail {
+  padding: 1em 0;
+}
+.UserCard-count {
+  padding: 0.5em 0;
+}
+.UserCard-countItem {
+  display: inline-block;
+}
+.UserCard-countItem:not(:last-child) {
+  margin-right: 0.5em;
+}
+.UserCard-action:not(:last-child) {
+  margin-right: 0.5em;
+}
+.Comment {
+  padding: 0.5em;
+}
+.Comment-title {
+  padding: 0.5em 0;
+}
 .Home {
   display: grid;
   grid-template-areas: "banner" "songs" "join";
@@ -153,4 +205,15 @@ img {
       -ms-flex-align: center;
           align-items: center;
   overflow: hidden;
+}
+.Song-content {
+  display: grid;
+  grid-template-columns: 5fr 2fr;
+}
+.Song-actions {
+  padding: 1em;
+}
+.Song-activity {
+  display: grid;
+  grid-template-columns: 2fr 5fr;
 }

@@ -53,7 +53,7 @@
         <section class="Song-activity">
           <article class="UserCard">
             <figure class="UserCard-avatar">
-              <img class="UserCard-image" src="avatar.png" alt="Username" />
+              <img class="UserCard-image" src="http://lorempixel.com/400/400/cats" alt="Username" />
             </figure>
 
             <section class="UserCard-detail">
@@ -80,27 +80,27 @@
           <ul class="CommentList">
             <li class="Comment">
               <h4 class="Comment-title">By: {username} on {date}</h4>
-              <button class="btn btn-play">298 ➡</button>
+              <p class="Comment-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci sit error expedita! Hic minus laudantium doloremque voluptatibus impedit id repellendus ipsam cum quaerat optio, quibusdam maiores! Eaque deserunt magni accusamus!</p>
             </li>
 
             <li class="Comment">
               <h4 class="Comment-title">By: {username} on {date}</h4>
-              <button class="btn btn-play">298 ➡</button>
+              <p class="Comment-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci sit error expedita! Hic minus laudantium doloremque voluptatibus impedit id repellendus ipsam cum quaerat optio, quibusdam maiores! Eaque deserunt magni accusamus!</p>
             </li>
 
             <li class="Comment">
               <h4 class="Comment-title">By: {username} on {date}</h4>
-              <button class="btn btn-play">298 ➡</button>
+              <p class="Comment-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci sit error expedita! Hic minus laudantium doloremque voluptatibus impedit id repellendus ipsam cum quaerat optio, quibusdam maiores! Eaque deserunt magni accusamus!</p>
             </li>
 
             <li class="Comment">
               <h4 class="Comment-title">By: {username} on {date}</h4>
-              <button class="btn btn-play">298 ➡</button>
+              <p class="Comment-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci sit error expedita! Hic minus laudantium doloremque voluptatibus impedit id repellendus ipsam cum quaerat optio, quibusdam maiores! Eaque deserunt magni accusamus!</p>
             </li>
 
             <li class="Comment">
               <h4 class="Comment-title">By: {username} on {date}</h4>
-              <button class="btn btn-play">298 ➡</button>
+              <p class="Comment-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci sit error expedita! Hic minus laudantium doloremque voluptatibus impedit id repellendus ipsam cum quaerat optio, quibusdam maiores! Eaque deserunt magni accusamus!</p>
             </li>
           </ul>
         </section>

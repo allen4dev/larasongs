@@ -21,7 +21,7 @@
             <h2 class="subtitle">Escucha la musica del momento gratis en la comunidad de Larasongs</h2>
 
             <section class="SongList">
-                <article class="Song">
+                <article class="SongCard">
                     <figure class="Song">
                         <img class="Song-photo" src="/default.png" alt="Song title" />
 
@@ -34,7 +34,7 @@
                     </figure>
                 </article>
 
-                <article class="Song">
+                <article class="SongCard">
                     <figure class="Song">
                         <img class="Song-photo" src="/default.png" alt="Song title" />
 
@@ -47,7 +47,7 @@
                     </figure>
                 </article>
 
-                <article class="Song">
+                <article class="SongCard">
                     <figure class="Song">
                         <img class="Song-photo" src="/default.png" alt="Song title" />
 
@@ -60,7 +60,7 @@
                     </figure>
                 </article>
 
-                <article class="Song">
+                <article class="SongCard">
                     <figure class="Song">
                         <img class="Song-photo" src="/default.png" alt="Song title" />
 
@@ -73,7 +73,7 @@
                     </figure>
                 </article>
 
-                <article class="Song">
+                <article class="SongCard">
                     <figure class="Song">
                         <img class="Song-photo" src="/default.png" alt="Song title" />
 
@@ -86,7 +86,7 @@
                     </figure>
                 </article>
 
-                <article class="Song">
+                <article class="SongCard">
                     <figure class="Song">
                         <img class="Song-photo" src="/default.png" alt="Song title" />
 
@@ -99,7 +99,7 @@
                     </figure>
                 </article>
 
-                <article class="Song">
+                <article class="SongCard">
                     <figure class="Song">
                         <img class="Song-photo" src="/default.png" alt="Song title" />
 
@@ -112,7 +112,7 @@
                     </figure>
                 </article>
 
-                <article class="Song">
+                <article class="SongCard">
                     <figure class="Song">
                         <img class="Song-photo" src="/default.png" alt="Song title" />
 

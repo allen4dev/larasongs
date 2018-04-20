@@ -55,15 +55,18 @@ li {
   grid-gap: 1em;
   padding: 1em;
 }
-.Song {
+.SongCard {
   border: 4px solid #00f;
 }
-.Song-description {
+.SongCard-description {
   padding: 0.5em;
   text-align: center;
 }
-.Song-title {
+.SongCard-title {
   margin-bottom: 0.5em;
+}
+.Footer {
+  padding: 2em;
 }
 .Home {
   display: grid;

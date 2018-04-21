@@ -123,6 +123,19 @@ img {
 .Comment-title {
   padding: 0.5em 0;
 }
+.ResourceList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1em 0;
+}
+.ResourceList-item {
+  padding: 0.5em;
+  margin: 0.5em;
+}
 .Home {
   display: grid;
   grid-template-areas: "banner" "songs" "join";
@@ -216,4 +229,44 @@ img {
 .Song-activity {
   display: grid;
   grid-template-columns: 2fr 5fr;
+}
+.User-heading {
+  height: 15em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 2em;
+}
+.User-avatar {
+  max-width: 150px;
+  max-height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 2em;
+}
+.User-content {
+  display: grid;
+  grid-template-columns: 5fr 2fr;
+}
+.User-stats {
+  padding: 1em 0;
+}
+.User-detailsHeader {
+  padding: 1em 0;
+}
+.User-actions {
+  padding: 0.5em 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.User-actionLink {
+  display: block;
+  padding: 0.5em 0;
 }

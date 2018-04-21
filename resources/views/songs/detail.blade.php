@@ -10,7 +10,7 @@
 
         <header class="Song-infoHeader">
           <div class="Song-infoDetail">
-            <span class="Song-infoArtist tag">{artist name}</span>
+            <span class="Song-infoArtist tag">{Username}</span>
             <h1 class="Song-infoTitle tag">{song name}</h1>
           </div>
 

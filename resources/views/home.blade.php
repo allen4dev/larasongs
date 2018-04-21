@@ -29,7 +29,7 @@
                             <h3 class="Song-title">
                                 <a href="/songs/1" class="Song-url">Song title</a>
                             </h3>
-                            <a href="/artist/1" class="Song-artist">Artist name</a>
+                            <a href="/users/1" class="Song-artist">Username</a>
                         </figcaption>
                     </figure>
                 </article>
@@ -42,7 +42,7 @@
                             <h3 class="Song-title">
                                 <a href="/songs/1" class="Song-url">Song title</a>
                             </h3>
-                            <a href="/artist/1" class="Song-artist">Artist name</a>
+                            <a href="/users/1" class="Song-artist">Username</a>
                         </figcaption>
                     </figure>
                 </article>
@@ -55,7 +55,7 @@
                             <h3 class="Song-title">
                                 <a href="/songs/1" class="Song-url">Song title</a>
                             </h3>
-                            <a href="/artist/1" class="Song-artist">Artist name</a>
+                            <a href="/users/1" class="Song-artist">Username</a>
                         </figcaption>
                     </figure>
                 </article>
@@ -68,7 +68,7 @@
                             <h3 class="Song-title">
                                 <a href="/songs/1" class="Song-url">Song title</a>
                             </h3>
-                            <a href="/artist/1" class="Song-artist">Artist name</a>
+                            <a href="/users/1" class="Song-artist">Username</a>
                         </figcaption>
                     </figure>
                 </article>
@@ -81,7 +81,7 @@
                             <h3 class="Song-title">
                                 <a href="/songs/1" class="Song-url">Song title</a>
                             </h3>
-                            <a href="/artist/1" class="Song-artist">Artist name</a>
+                            <a href="/users/1" class="Song-artist">Username</a>
                         </figcaption>
                     </figure>
                 </article>
@@ -94,7 +94,7 @@
                             <h3 class="Song-title">
                                 <a href="/songs/1" class="Song-url">Song title</a>
                             </h3>
-                            <a href="/artist/1" class="Song-artist">Artist name</a>
+                            <a href="/users/1" class="Song-artist">Username</a>
                         </figcaption>
                     </figure>
                 </article>
@@ -107,7 +107,7 @@
                             <h3 class="Song-title">
                                 <a href="/songs/1" class="Song-url">Song title</a>
                             </h3>
-                            <a href="/artist/1" class="Song-artist">Artist name</a>
+                            <a href="/users/1" class="Song-artist">Username</a>
                         </figcaption>
                     </figure>
                 </article>
@@ -120,7 +120,7 @@
                             <h3 class="Song-title">
                                 <a href="/songs/1" class="Song-url">Song title</a>
                             </h3>
-                            <a href="/artist/1" class="Song-artist">Artist name</a>
+                            <a href="/users/1" class="Song-artist">Username</a>
                         </figcaption>
                     </figure>
                 </article>

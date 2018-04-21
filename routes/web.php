@@ -20,3 +20,7 @@ Route::get('/', function () {
 Route::get('/songs/1', function () {
   return view('songs.detail');
 })->name('songs.detail');
+
+Route::get('/users/1', function () {
+  return view('artists.detail');
+})->name('artists.detail');

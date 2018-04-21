@@ -52,7 +52,7 @@ img {
 .Navigation-listLink {
   padding: 0.5em;
 }
-.SongList {
+.SongCardList {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   grid-gap: 1em;

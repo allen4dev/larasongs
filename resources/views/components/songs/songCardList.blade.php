@@ -1,6 +1,6 @@
-<section class="SongList">
+<section class="SongCardList">
   <article class="SongCard">
-      <figure class="Song">
+      <figure SongCard>
           <img class="Song-photo" src="/default.png" alt="Song title" />
 
           <figcaption class="Song-description">
@@ -13,7 +13,7 @@
   </article>
 
   <article class="SongCard">
-      <figure class="Song">
+      <figure SongCard>
           <img class="Song-photo" src="/default.png" alt="Song title" />
 
           <figcaption class="Song-description">
@@ -26,7 +26,7 @@
   </article>
 
   <article class="SongCard">
-      <figure class="Song">
+      <figure SongCard>
           <img class="Song-photo" src="/default.png" alt="Song title" />
 
           <figcaption class="Song-description">
@@ -39,7 +39,7 @@
   </article>
 
   <article class="SongCard">
-      <figure class="Song">
+      <figure SongCard>
           <img class="Song-photo" src="/default.png" alt="Song title" />
 
           <figcaption class="Song-description">
@@ -52,7 +52,7 @@
   </article>
 
   <article class="SongCard">
-      <figure class="Song">
+      <figure SongCard>
           <img class="Song-photo" src="/default.png" alt="Song title" />
 
           <figcaption class="Song-description">
@@ -65,7 +65,7 @@
   </article>
 
   <article class="SongCard">
-      <figure class="Song">
+      <figure SongCard>
           <img class="Song-photo" src="/default.png" alt="Song title" />
 
           <figcaption class="Song-description">
@@ -78,7 +78,7 @@
   </article>
 
   <article class="SongCard">
-      <figure class="Song">
+      <figure SongCard>
           <img class="Song-photo" src="/default.png" alt="Song title" />
 
           <figcaption class="Song-description">
@@ -91,7 +91,7 @@
   </article>
 
   <article class="SongCard">
-      <figure class="Song">
+      <figure SongCard>
           <img class="Song-photo" src="/default.png" alt="Song title" />
 
           <figcaption class="Song-description">

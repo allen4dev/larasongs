@@ -21,6 +21,14 @@ Route::get('/songs/1', function () {
   return view('songs.detail');
 })->name('songs.detail');
 
+Route::get('/songs/create', function () {
+  return view('songs.create');
+})->name('songs.create');
+
+Route::get('/playlists/1', function () {
+  return view('playlists.detail');
+})->name('songs.detail');
+
 Route::get('/users/1', function () {
   return view('artists.detail');
 })->name('artists.detail');

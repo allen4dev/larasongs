@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-  <section class="Song">
+  <section SongCard>
     <section class="Song-detail">
       <section class="Song-info">
         <button class="Song-infoButton btn btn-play">

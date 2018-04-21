@@ -24,3 +24,7 @@ Route::get('/songs/1', function () {
 Route::get('/users/1', function () {
   return view('artists.detail');
 })->name('artists.detail');
+
+Route::get('/search', function () {
+  return view('search.index');
+})->name('search');

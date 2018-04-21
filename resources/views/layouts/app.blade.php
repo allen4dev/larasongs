@@ -28,8 +28,15 @@
                     <a href="{{ route('home') }}" class="Logo-link">Soundcloud</a>
                 </div>
 
+                <form method="GET" action="/search" class="Searchbar">
+                    <input class="Searchbar-input" name="q" type="text" placeholder="Buscar..." />
+                </form>
+
                 <nav class="Navigation">
                     <ul class="Navigation-list">
+                        <!-- <li class="Navigation-listItem">
+                            <a href="{{ route('search') }}" class="Navigation-listLink btn btn-flat">Buscar</a>
+                        </li> -->
                         <li class="Navigation-listItem">
                             <a href="{{ route('login') }}" class="Navigation-listLink btn btn-flat">Inicia sesion</a>
                         </li>

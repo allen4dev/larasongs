@@ -6,16 +6,16 @@
       <section class="Playlist-info">
         <header class="Playlist-infoHeader">
           <div class="Playlist-infoDetail">
-            <span class="Playlist-infoArtist tag">{Username}</span>
-            <h1 class="Playlist-infoTitle tag">{Playlist name}</h1>
+            <span class="Playlist-infoArtist tag">{{ $playlist->user->name}}</span>
+            <h1 class="Playlist-infoTitle tag">{{ $playlist->title }}</h1>
           </div>
 
-          <span class="Playlist-infoDate">4 años</span>
+          <span class="Playlist-infoDate">{{ $playlist->created_at }}</span>
         </header>
       </section>
 
       <figure class="Playlist-photo">
-        <img class="Playlist-photoImage" src="http://lorempixel.com/400/400/cats" alt="Playlist name" />
+        <img class="Playlist-photoImage" src="{{ $playlist->photo_url }}" alt="{{ $playlist->title }}" />
       </figure>
     </section>
 
@@ -64,26 +64,14 @@
           </article>
 
           <ul class="SongList">
-            <li class="SongRow">
-              <h4 class="SongRow-title">Song title</h4>
-              <span class="SongRow-playCount">➡ 2145</span>
-            </li>
-            <li class="SongRow">
-              <h4 class="SongRow-title">Song title</h4>
-              <span class="SongRow-playCount">➡ 2145</span>
-            </li>
-            <li class="SongRow">
-              <h4 class="SongRow-title">Song title</h4>
-              <span class="SongRow-playCount">➡ 2145</span>
-            </li>
-            <li class="SongRow">
-              <h4 class="SongRow-title">Song title</h4>
-              <span class="SongRow-playCount">➡ 2145</span>
-            </li>
-            <li class="SongRow">
-              <h4 class="SongRow-title">Song title</h4>
-              <span class="SongRow-playCount">➡ 2145</span>
-            </li>
+            @forelse ($playlist->songs as $song)
+              <li class="SongRow">
+                <h4 class="SongRow-title">{{ $song->title }}</h4>
+                <span class="SongRow-playCount">➡ 2145</span>
+              </li>
+            @empty
+              This playlist has no songs.
+            @endforelse
           </ul>
         </section>
       </article>

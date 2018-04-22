@@ -8,8 +8,8 @@
       </figure>
 
       <div class="User-info">
-        <h4 class="User-username tag">Username</h4>
-        <span class="User-fullname tag">Full name</h4>
+        <h4 class="User-username tag">{Username}</h4>
+        <span class="User-fullname tag">{{ $user->name }}</h4>
       </div>
     </header>
 

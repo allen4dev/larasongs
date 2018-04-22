@@ -13,25 +13,17 @@
 
 Auth::routes();
 
-Route::get('/', function () {
-  return view('home');
-})->name('home');
+Route::get('/', 'SongController@index')->name('home');
 
-Route::get('/songs/1', function () {
-  return view('songs.detail');
-})->name('songs.detail');
+Route::get('/songs/{song}', 'SongController@show')->name('songs.detail');
 
 Route::get('/songs/create', function () {
   return view('songs.create');
 })->name('songs.create');
 
-Route::get('/playlists/1', function () {
-  return view('playlists.detail');
-})->name('songs.detail');
+Route::get('/playlists/{playlist}', 'PlaylistController@show')->name('playlists.detail');
 
-Route::get('/users/1', function () {
-  return view('artists.detail');
-})->name('artists.detail');
+Route::get('/users/{user}', 'UserController@show')->name('users.detail');
 
 Route::get('/search', function () {
   return view('search.index');

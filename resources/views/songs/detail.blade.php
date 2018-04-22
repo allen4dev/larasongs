@@ -10,11 +10,11 @@
 
         <header class="Song-infoHeader">
           <div class="Song-infoDetail">
-            <span class="Song-infoArtist tag">{Username}</span>
-            <h1 class="Song-infoTitle tag">{song name}</h1>
+            <span class="Song-infoArtist tag">{{ $song->user->name }}</span>
+            <h1 class="Song-infoTitle tag">{{ $song->title }}</h1>
           </div>
 
-          <span class="Song-infoDate">4 años</span>
+          <span class="Song-infoDate">{{ $song->created_at }}</span>
         </header>
       </section>
 
@@ -23,7 +23,7 @@
       </section>
 
       <figure class="Song-photo">
-        <img class="Song-photoImage" src="http://lorempixel.com/400/400/cats" alt="Song name" />
+        <img class="Song-photoImage" src="{{ $song->photo_url }}" alt="{{ $song->title }}" />
       </figure>
     </section>
 
@@ -77,32 +77,7 @@
             </section>
           </article>
 
-          <ul class="CommentList">
-            <li class="Comment">
-              <h4 class="Comment-title">By: {username} on {date}</h4>
-              <p class="Comment-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci sit error expedita! Hic minus laudantium doloremque voluptatibus impedit id repellendus ipsam cum quaerat optio, quibusdam maiores! Eaque deserunt magni accusamus!</p>
-            </li>
-
-            <li class="Comment">
-              <h4 class="Comment-title">By: {username} on {date}</h4>
-              <p class="Comment-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci sit error expedita! Hic minus laudantium doloremque voluptatibus impedit id repellendus ipsam cum quaerat optio, quibusdam maiores! Eaque deserunt magni accusamus!</p>
-            </li>
-
-            <li class="Comment">
-              <h4 class="Comment-title">By: {username} on {date}</h4>
-              <p class="Comment-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci sit error expedita! Hic minus laudantium doloremque voluptatibus impedit id repellendus ipsam cum quaerat optio, quibusdam maiores! Eaque deserunt magni accusamus!</p>
-            </li>
-
-            <li class="Comment">
-              <h4 class="Comment-title">By: {username} on {date}</h4>
-              <p class="Comment-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci sit error expedita! Hic minus laudantium doloremque voluptatibus impedit id repellendus ipsam cum quaerat optio, quibusdam maiores! Eaque deserunt magni accusamus!</p>
-            </li>
-
-            <li class="Comment">
-              <h4 class="Comment-title">By: {username} on {date}</h4>
-              <p class="Comment-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci sit error expedita! Hic minus laudantium doloremque voluptatibus impedit id repellendus ipsam cum quaerat optio, quibusdam maiores! Eaque deserunt magni accusamus!</p>
-            </li>
-          </ul>
+          @include('components.comments.commentList')
         </section>
       </article>
 

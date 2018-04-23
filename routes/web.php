@@ -20,7 +20,9 @@ Route::get('/songs/{song}', 'SongController@show')->name('songs.detail');
 Route::post('/songs', 'SongController@store')->name('songs.store');
 
 
+Route::get('/playlists/create', 'PlaylistController@create')->name('playlists.create');
 Route::get('/playlists/{playlist}', 'PlaylistController@show')->name('playlists.detail');
+Route::post('/playlists', 'PlaylistController@store')->name('playlists.store');
 
 Route::get('/users/{user}', 'UserController@show')->name('users.detail');
 

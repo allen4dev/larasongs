@@ -36,7 +36,11 @@
                     <ul class="Navigation-list">
                         @auth
                             <li class="Navigation-listItem">
-                                <a href="{{ route('songs.create') }}" class="Navigation-listLink btn btn-flat">Upload</a>
+                                <a href="{{ route('songs.create') }}" class="Navigation-listLink btn btn-flat">Upload a song</a>
+                            </li>
+
+                            <li class="Navigation-listItem">
+                                <a href="{{ route('playlists.create') }}" class="Navigation-listLink btn btn-flat">Create a playlist</a>
                             </li>
                         @endauth
 

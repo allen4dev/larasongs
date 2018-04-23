@@ -34,15 +34,20 @@
 
                 <nav class="Navigation">
                     <ul class="Navigation-list">
-                        <li class="Navigation-listItem">
-                            <a href="{{ route('songs.create') }}" class="Navigation-listLink btn btn-flat">Upload</a>
-                        </li>
-                        <li class="Navigation-listItem">
-                            <a href="{{ route('login') }}" class="Navigation-listLink btn btn-flat">Inicia sesion</a>
-                        </li>
-                        <li class="Navigation-listItem">
-                            <a href="{{ route('register') }}" class="Navigation-listLink btn btn-primary">Crea tu cuenta</a>
-                        </li>
+                        @auth
+                            <li class="Navigation-listItem">
+                                <a href="{{ route('songs.create') }}" class="Navigation-listLink btn btn-flat">Upload</a>
+                            </li>
+                        @endauth
+
+                        @guest
+                            <li class="Navigation-listItem">
+                                <a href="{{ route('login') }}" class="Navigation-listLink btn btn-flat">Inicia sesion</a>
+                            </li>
+                            <li class="Navigation-listItem">
+                                <a href="{{ route('register') }}" class="Navigation-listLink btn btn-primary">Crea tu cuenta</a>
+                            </li>
+                        @endguest
                     </ul>
                 </nav>
             </header>

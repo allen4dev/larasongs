@@ -15,11 +15,10 @@ Auth::routes();
 
 Route::get('/', 'SongController@index')->name('home');
 
+Route::get('/songs/create', 'SongController@create')->name('songs.create');
 Route::get('/songs/{song}', 'SongController@show')->name('songs.detail');
+Route::post('/songs', 'SongController@store')->name('songs.store');
 
-Route::get('/songs/create', function () {
-  return view('songs.create');
-})->name('songs.create');
 
 Route::get('/playlists/{playlist}', 'PlaylistController@show')->name('playlists.detail');
 

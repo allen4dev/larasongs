@@ -8,10 +8,15 @@ use App\Song;
 
 class SongController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth', ['except' => ['index', 'create']]);
+    }
+
     public function index()
     {
         // ToDo: Order the items by popularity
-        $songs = Song::take(10)->get();
+        $songs = Song::latest()->take(10)->get();
 
         return view('home', compact('songs'));
     }
@@ -20,5 +25,22 @@ class SongController extends Controller
     {
         // ToDo: Solve N+1 problem ($song->comments)
         return view('songs.detail', compact('song'));
+    }
+
+    public function create()
+    {
+        return view('songs.create');
+    }
+
+    public function store()
+    {
+        // ToDo: Validate the input
+        Song::create([
+            'title' => request()->title,
+            'cover' => request()->cover,
+            'user_id' => auth()->id(),
+        ]);
+
+        return redirect()->home();
     }
 }

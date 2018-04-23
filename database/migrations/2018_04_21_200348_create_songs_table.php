@@ -17,7 +17,7 @@ class CreateSongsTable extends Migration
             $table->increments('id');
             $table->integer('user_id');
             $table->string('title');
-            $table->string('photo_url');
+            $table->string('cover');
             $table->timestamps();
         });
     }

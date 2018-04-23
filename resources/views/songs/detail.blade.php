@@ -23,7 +23,7 @@
       </section>
 
       <figure class="Song-photo">
-        <img class="Song-photoImage" src="{{ $song->photo_url }}" alt="{{ $song->title }}" />
+        <img class="Song-photoImage" src="{{ $song->cover }}" alt="{{ $song->title }}" />
       </figure>
     </section>
 

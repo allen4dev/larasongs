@@ -8,6 +8,6 @@ $factory->define(App\Song::class, function (Faker $faker) {
             return factory(App\User::class)->create()->id;
         },
         'title' => $faker->sentence,
-        'photo_url' => $faker->imageUrl(400, 400, 'cats'),
+        'cover' => $faker->imageUrl(400, 400, 'cats'),
     ];
 });

@@ -2,7 +2,7 @@
     @forelse ($songs as $song)
         <article class="SongCard">
             <figure SongCard>
-                <img class="Song-photo" src="{{ $song->photo_url }}" alt="{{ $song->title }}" />
+                <img class="Song-photo" src="{{ $song->cover }}" alt="{{ $song->title }}" />
 
                 <figcaption class="Song-description">
                     <h3 class="Song-title">

@@ -10,13 +10,16 @@ class PlaylistController extends Controller
 {
     public function __construct()
     {
-        $this->middleware('auth', ['except' => ['index', 'create']]);
+        $this->middleware('auth', ['except' => ['index', 'show']]);
     }
 
     public function show (Playlist $playlist)
     {
         // ToDo: Solve N+1 problem ($playlist->songs)
-        return view('playlists.detail', compact('playlist'));
+        $resource = $playlist;
+        $user = $playlist->user;
+        
+        return view('playlists.detail', compact('resource','user'));
     }
 
     public function create()

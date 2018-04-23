@@ -10,11 +10,11 @@
 
         <header class="Song-infoHeader">
           <div class="Song-infoDetail">
-            <span class="Song-infoArtist tag">{{ $song->user->name }}</span>
-            <h1 class="Song-infoTitle tag">{{ $song->title }}</h1>
+            <span class="Song-infoArtist tag">{{ $user->name }}</span>
+            <h1 class="Song-infoTitle tag">{{ $resource->title }}</h1>
           </div>
 
-          <span class="Song-infoDate">{{ $song->created_at }}</span>
+          <span class="Song-infoDate">{{ $resource->created_at }}</span>
         </header>
       </section>
 
@@ -23,15 +23,16 @@
       </section>
 
       <figure class="Song-photo">
-        <img class="Song-photoImage" src="{{ $song->cover }}" alt="{{ $song->title }}" />
+        <img class="Song-photoImage" src="{{ $resource->cover }}" alt="{{ $resource->title }}" />
       </figure>
     </section>
 
     <section class="Song-content">
       <article class="Song-actions">
         <section class="CommentBar">
-          <form class="CommentBar-form">
-            <input class="CommentBar-input" type="text" placeholder="Escriba un comentario"/>
+          <form method="POST" action="/songs/{{ $resource->id }}/comments" class="CommentBar-form">
+            @csrf
+            <input class="CommentBar-input" type="text" name="body" placeholder="Escriba un comentario"/>
           </form>
         </section>
 
@@ -51,31 +52,7 @@
         </section>
 
         <section class="Song-activity">
-          <article class="UserCard">
-            <figure class="UserCard-avatar">
-              <img class="UserCard-image" src="http://lorempixel.com/400/400/cats" alt="Username" />
-            </figure>
-
-            <section class="UserCard-detail">
-              <header class="UserCard-header">
-                <h4 class="UserCard-username">Username</h4>
-              </header>
-
-              <ul class="UserCard-count">
-                <li class="UserCard-countItem">🙎 18</li>
-                <li class="UserCard-countItem">🎵 8</li>
-              </ul>
-
-              <footer class="UserCard-actions">
-                <a href="#" class="UserCard-action btn btn-primary">
-                  Seguir
-                </a>
-                <a href="#" class="UserCard-action btn btn-flat">
-                  Denunciar
-                </a>
-              </footer>
-            </section>
-          </article>
+          @include('components.users.card')
 
           @include('components.comments.commentList')
         </section>

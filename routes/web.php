@@ -18,7 +18,7 @@ Route::get('/', 'SongController@index')->name('home');
 Route::get('/songs/create', 'SongController@create')->name('songs.create');
 Route::get('/songs/{song}', 'SongController@show')->name('songs.detail');
 Route::post('/songs', 'SongController@store')->name('songs.store');
-
+Route::post('/songs/{song}/comments', 'CommentController@store');
 
 Route::get('/playlists/create', 'PlaylistController@create')->name('playlists.create');
 Route::get('/playlists/{playlist}', 'PlaylistController@show')->name('playlists.detail');

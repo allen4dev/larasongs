@@ -10,7 +10,7 @@ class SongController extends Controller
 {
     public function __construct()
     {
-        $this->middleware('auth', ['except' => ['index', 'create']]);
+        $this->middleware('auth', ['except' => ['index', 'show']]);
     }
 
     public function index()
@@ -24,7 +24,10 @@ class SongController extends Controller
     public function show(Song $song)
     {
         // ToDo: Solve N+1 problem ($song->comments)
-        return view('songs.detail', compact('song'));
+        $resource = $song;
+        $user = $song->user;
+
+        return view('songs.detail', compact('resource', 'user'));
     }
 
     public function create()

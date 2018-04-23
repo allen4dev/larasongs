@@ -1,5 +1,5 @@
 <ul class="CommentList">
-  @forelse ($song->comments as $comment)
+  @forelse ($resource->comments as $comment)
     <li class="Comment">
       <h4 class="Comment-title">By: {{ $comment->user->name }} on {$comment->created_at}</h4>
       <p class="Comment-body">

@@ -29,7 +29,7 @@
                 </div>
 
                 <form method="GET" action="/search" class="Searchbar">
-                    <input class="Searchbar-input" name="q" type="text" placeholder="Buscar..." />
+                    <input class="Searchbar-input" name="title" type="text" placeholder="Buscar..." />
                 </form>
 
                 <nav class="Navigation">

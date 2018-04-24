@@ -22,4 +22,9 @@ class Song extends Model
     {
         return $this->morphMany(Comment::class, 'commentable');
     }
+
+    public function scopeFilter($query, $filters)
+    {
+        return $filters->apply($query);
+    }
 }

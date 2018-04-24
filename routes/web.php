@@ -26,6 +26,4 @@ Route::post('/playlists', 'PlaylistController@store')->name('playlists.store');
 
 Route::get('/users/{user}', 'UserController@show')->name('users.detail');
 
-Route::get('/search', function () {
-  return view('search.index');
-})->name('search');
+Route::get('/search', 'SearchController@index')->name('search');

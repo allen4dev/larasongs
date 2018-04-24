@@ -47,7 +47,9 @@
                 <span class="SongRow-playCount">➡ 2145</span>
               </li>
             @empty
-              This playlist has no songs.
+              <p>
+                This playlist has no songs.
+              </p>
             @endforelse
           </ul>
         </section>

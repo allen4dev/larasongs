@@ -42,6 +42,14 @@
                             <li class="Navigation-listItem">
                                 <a href="{{ route('playlists.create') }}" class="Navigation-listLink btn btn-flat">Create a playlist</a>
                             </li>
+
+                            <li class="Navigation-listItem">
+                                <a href="{{ route('logout') }}" class="Navigation-listLink btn btn-flat">Logout</a>
+                            </li>
+
+                            <li class="Navigation-listItem">
+                                <a href="{{ route('users.detail', auth()->user()) }}" class="Navigation-listLink btn btn-flat">{{ auth()->user()->name }}</a>
+                            </li>
                         @endauth
 
                         @guest

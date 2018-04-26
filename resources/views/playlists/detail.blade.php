@@ -15,7 +15,7 @@
       </section>
 
       <figure class="Playlist-photo">
-        <img class="Playlist-photoImage" src="{{ $resource->cover }}" alt="{{ $resource->title }}" />
+        <img class="Playlist-photoImage" src="{{ $resource->cover }}" width="250" alt="{{ $resource->title }}" />
       </figure>
     </section>
 

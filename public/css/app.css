@@ -136,6 +136,12 @@ img {
   padding: 0.5em;
   margin: 0.5em;
 }
+.Playlists {
+  padding: 1em;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  grid-gap: 1em;
+}
 .Home {
   display: grid;
   grid-template-areas: "banner" "songs" "join";

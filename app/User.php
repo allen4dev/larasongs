@@ -27,8 +27,18 @@ class User extends Authenticatable
         'password', 'remember_token',
     ];
 
+    public function playlists()
+    {
+        return $this->hasMany(Playlist::class);
+    }
+
     public function songs()
     {
         return $this->hasMany(Song::class);
+    }
+
+    public function activities()
+    {
+        return $this->hasMany(Activity::class);
     }
 }

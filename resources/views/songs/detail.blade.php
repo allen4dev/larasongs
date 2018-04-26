@@ -14,7 +14,10 @@
             <h1 class="Song-infoTitle tag">{{ $resource->title }}</h1>
           </div>
 
-          <span class="Song-infoDate">{{ $resource->created_at }}</span>
+          <div class="Song-infoActions">
+            <a href="{{ route('songs.add', $resource) }}">Add song to playlist</a>
+            <span class="Song-infoDate">{{ $resource->created_at }}</span>
+          </div>
         </header>
       </section>
 

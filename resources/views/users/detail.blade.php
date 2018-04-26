@@ -24,7 +24,22 @@
         </ul>
 
         <section class="Activity">
-          Put the last activity here
+          @auth
+            <div>
+              <a href="{{ route('users.playlists', auth()->user()) }}">My playlists</a>
+            </div>
+          @endauth
+          
+          <ul class="Activity-list">
+            @forelse($user->activities as $activity)
+              <li class="Activity">
+                <h4>{{ $activity->subject->title }}</h4>
+                <img width="150" src="{{ $activity->subject->cover }}" />
+              </li>
+            @empty
+              <p class="text">No recent activity.</p>
+            @endforelse
+          </ul>
         </section>
       </section>
 

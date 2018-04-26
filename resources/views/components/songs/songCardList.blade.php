@@ -8,7 +8,7 @@
                     <h3 class="Song-title">
                         <a href="/songs/{{ $song->id }}" class="Song-url">{{ $song->title }}</a>
                     </h3>
-                    <a href="/users/1" class="Song-artist">{{ $song->user->name }}</a>
+                    <a href="{{ route('users.detail', $song->user) }}" class="Song-artist">{{ $song->user->name }}</a>
                 </figcaption>
             </figure>
         </article>

@@ -5,12 +5,20 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use App\Playlist;
+use App\User;
 
 class PlaylistController extends Controller
 {
     public function __construct()
     {
         $this->middleware('auth', ['except' => ['index', 'show']]);
+    }
+
+    public function index(User $user)
+    {
+        $playlists = $user->playlists;
+
+        return view('users.playlists', compact('playlists'));
     }
 
     public function show (Playlist $playlist)

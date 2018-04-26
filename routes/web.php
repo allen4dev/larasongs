@@ -14,8 +14,14 @@
 Auth::routes();
 
 Route::get('/', 'SongController@index')->name('home');
+Route::get('/logout', function () {
+  auth()->logout();
+
+  return redirect('login');
+});
 
 Route::get('/songs/create', 'SongController@create')->name('songs.create');
+Route::get('/songs/{song}/add', 'AddSongController@store')->name('songs.add');
 Route::get('/songs/{song}', 'SongController@show')->name('songs.detail');
 Route::post('/songs', 'SongController@store')->name('songs.store');
 Route::post('/songs/{song}/comments', 'CommentController@store');
@@ -25,5 +31,6 @@ Route::get('/playlists/{playlist}', 'PlaylistController@show')->name('playlists.
 Route::post('/playlists', 'PlaylistController@store')->name('playlists.store');
 
 Route::get('/users/{user}', 'UserController@show')->name('users.detail');
+Route::get('/users/{user}/playlists', 'PlaylistController@index')->name('users.playlists');
 
 Route::get('/search', 'SearchController@index')->name('search');

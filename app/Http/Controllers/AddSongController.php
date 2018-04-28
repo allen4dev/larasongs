@@ -4,12 +4,20 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use App\Playlist;
 use App\Song;
 
 class AddSongController extends Controller
 {
-    public function store(Song $song)
+    public function create(Playlist $playlist)
     {
-        dd($song);
+        return view('playlists.addSong', compact('playlist'));
+    }
+
+    public function store(Playlist $playlist)
+    {
+        $playlist->songs()->attach(request()->songs);
+
+        return redirect("/playlists/{$playlist->id}");
     }
 }

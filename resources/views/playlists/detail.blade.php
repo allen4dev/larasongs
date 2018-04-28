@@ -37,7 +37,9 @@
         </section>
 
         <section class="Playlist-activity">
-          
+
+        <a href="/playlists/{{ $resource->id }}/songs">Add songs</a>
+
           @include('partials.users.card')
 
           <ul class="SongList">

@@ -21,7 +21,8 @@ Route::get('/logout', function () {
 });
 
 Route::get('/songs/create', 'SongController@create')->name('songs.create');
-Route::get('/songs/{song}/add', 'AddSongController@store')->name('songs.add');
+Route::get('/playlists/{playlist}/songs', 'AddSongController@create')->name('playlists.addsong');
+Route::post('/playlists/{playlist}/songs', 'AddSongController@store');
 Route::get('/songs/{song}', 'SongController@show')->name('songs.detail');
 Route::post('/songs', 'SongController@store')->name('songs.store');
 Route::post('/songs/{song}/comments', 'CommentController@store');

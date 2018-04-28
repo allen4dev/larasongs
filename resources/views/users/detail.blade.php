@@ -31,11 +31,10 @@
           @endauth
           
           <ul class="Activity-list">
-            @forelse($user->activities as $activity)
-              <li class="Activity">
-                <h4>{{ $activity->subject->title }}</h4>
-                <img width="150" src="{{ $activity->subject->cover }}" />
-              </li>
+            @forelse ($user->activities as $activity)
+              @if (view()->exists("components.{$activity->type}"))
+                @include("components.{$activity->type}")
+              @endif
             @empty
               <p class="text">No recent activity.</p>
             @endforelse

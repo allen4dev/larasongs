@@ -38,7 +38,7 @@
 
         <section class="Playlist-activity">
           
-          @include('components.users.card')
+          @include('partials.users.card')
 
           <ul class="SongList">
             @forelse ($resource->songs as $song)

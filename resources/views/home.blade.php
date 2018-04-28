@@ -20,7 +20,7 @@
         <section class="Home-songs">
             <h2 class="subtitle">Escucha la musica del momento gratis en la comunidad de Larasongs</h2>
 
-            @include('components.songs.songCardList')
+            @include('partials.songs.songCardList')
 
             <div class="Home-songsFooter">
                 <a href="/search?resource=songs&top=50" class="Home-songsLink btn btn-primary">

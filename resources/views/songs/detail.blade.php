@@ -55,9 +55,9 @@
         </section>
 
         <section class="Song-activity">
-          @include('components.users.card')
+          @include('partials.users.card')
 
-          @include('components.comments.commentList')
+          @include('partials.comments.commentList')
         </section>
       </article>
 

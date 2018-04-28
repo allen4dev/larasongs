@@ -6,11 +6,11 @@ use Illuminate\Database\Eloquent\Model;
 
 class Activity extends Model
 {
-    protected $fillable = ['user_id'];
+    protected $fillable = ['user_id', 'type'];
 
     public function subject()
     {
-        return $this->morphTo();
+        return $this->morphTo()->withPivot('type');
     }
 
     public function user()

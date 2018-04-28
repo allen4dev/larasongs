@@ -7,7 +7,7 @@
     <section class="Search-results">
       <h2 class="Search-resultsTitle">Se encontraron {500} pistas</h2>
 
-      @include('components.songs.songCardList')
+      @include('partials.songs.songCardList')
     </section>
   </section>
 @endsection

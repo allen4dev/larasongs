@@ -8,17 +8,26 @@ class Song extends Model
 {
     protected $fillable = ['title', 'cover', 'user_id'];
 
-    protected static function boot(Type $var = null)
+    protected static function boot()
     {
-        parent::boot();
-
+        parent::boot();        
+        
         static::created(function ($model) {
             $model->activities()->create([
                 'user_id' => auth()->id(),
+                'type' => $model->getActivityType('created')
             ]);
         });
     }
+        
+    // ToDo: Refactor        
+    protected function getActivityType($event)
+    {
+        $type = strtolower((new \ReflectionClass($this))->getShortName());
 
+        return "{$event}_{$type}";
+    }
+    
     public function user()
     {
         return $this->belongsTo(User::class);

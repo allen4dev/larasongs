@@ -40,7 +40,10 @@
 
         <section class="Actions">
           <div class="Actions-user">
-            <a href="#" class="Actions-button btn btn-flat">Te gusta</a>
+            <form method="POST" action="/favorites/{{ $resource->id }}">
+              @csrf
+              <button type="submit">Te gusta</button>
+            </form>
             <a href="#" class="Actions-button btn btn-flat">Repostear</a>
             <a href="#" class="Actions-button btn btn-flat">Compartir</a>
             <a href="#" class="Actions-button btn btn-flat">Mas</a>

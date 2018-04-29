@@ -48,6 +48,11 @@ class Song extends Model
         return $this->morphMany(Activity::class, 'subject');
     }
 
+    public function favorites()
+    {
+        return $this->morphMany(Favorite::class, 'favoritable');
+    }
+
     public function scopeFilter($query, $filters)
     {
         return $filters->apply($query);

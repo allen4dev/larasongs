@@ -21,11 +21,12 @@ Route::get('/logout', function () {
 });
 
 Route::get('/songs/create', 'SongController@create')->name('songs.create');
-Route::get('/playlists/{playlist}/songs', 'AddSongController@create')->name('playlists.addsong');
-Route::post('/playlists/{playlist}/songs', 'AddSongController@store');
 Route::get('/songs/{song}', 'SongController@show')->name('songs.detail');
 Route::post('/songs', 'SongController@store')->name('songs.store');
 Route::post('/songs/{song}/comments', 'CommentController@store');
+
+Route::get('/playlists/{playlist}/songs', 'AddSongController@create')->name('playlists.addsong');
+Route::post('/playlists/{playlist}/songs', 'AddSongController@store');
 
 Route::get('/playlists/create', 'PlaylistController@create')->name('playlists.create');
 Route::get('/playlists/{playlist}', 'PlaylistController@show')->name('playlists.detail');
@@ -35,3 +36,5 @@ Route::get('/users/{user}', 'UserController@show')->name('users.detail');
 Route::get('/users/{user}/playlists', 'PlaylistController@index')->name('users.playlists');
 
 Route::get('/search', 'SearchController@index')->name('search');
+
+Route::post('/favorites/{song}', 'FavoriteController@store')->name('favorites.store');
